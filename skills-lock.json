@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "design-taste-frontend": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "6d838b246d0e35d0b53f4f23f98ba7a1dd561937e64f7d0c7553b0928e376c3e"
+    },
+    "google-fonts": {
+      "source": "sliday/google-fonts-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "764051faaed15dde3d25ed0d33325d877b46856916d131b57d96c77bddde6af5"
+    }
+  }
+}
