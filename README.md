@@ -23,15 +23,6 @@ Live Animated Grid Preview (Inspired by India's national electrical transmission
 
 ---
 
-## Tech Stack
-
-* **Frontend**: React (Functional Components + Hooks)
-* **Styling**: Vanilla CSS (Custom properties design system with HSL-tailored warm white, primary blue, sage green, and earth brown palette)
-* **Visuals**: High-performance HTML5 Canvas with custom animation engine and event-driven interactivity (parallax & touch pulses)
-* **Build System**: Vite
-
----
-
 ## Local Development
 
 To run this project locally:
