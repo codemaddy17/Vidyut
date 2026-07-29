@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# IDE / Antigravity agent artefacts
+skills-lock.json
+
+# Loose original logo at root (canonical copy is in public/assets/)
+Vidyut Logo.png

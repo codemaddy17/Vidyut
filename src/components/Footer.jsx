@@ -4,11 +4,13 @@ export default function Footer() {
   return (
     <footer className="footer-bar">
       <div className="footer-left">
+        <img
+          src="/assets/vidyut-logo.png"
+          alt="Vidyut"
+          className="footer-logo-img"
+        />
         <p className="founders-names">
           Founders: <strong>Aashna Suman</strong> & <strong>Madhav Tiwari</strong>
-        </p>
-        <p className="lab-note">
-         
         </p>
       </div>
       <div className="footer-right">

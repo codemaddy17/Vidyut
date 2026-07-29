@@ -1,33 +1,54 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import BackgroundGrid from './components/BackgroundGrid';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import GridMetrics from './components/GridMetrics';
-import ProblemStatement from './components/ProblemStatement';
-import InfrastructureHighlights from './components/InfrastructureHighlights';
-import HowItWorks from './components/HowItWorks';
-import TargetAudience from './components/TargetAudience';
-import ManifestoQuote from './components/ManifestoQuote';
-import EmailSignup from './components/EmailSignup';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import InvestorDeck from './pages/InvestorDeck';
+
+function Layout({ children }) {
+  return (
+    <div className="app-container app-container--visible">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
+  );
+}
 
 export default function App() {
   return (
-    <div className="app-container">
-      <BackgroundGrid />
-      <div className="content-wrapper">
-        <Header />
-        <Hero />
-        <GridMetrics />
-        <ProblemStatement />
-        <InfrastructureHighlights />
-        <HowItWorks />
-        <TargetAudience />
-        <ManifestoQuote />
-        <EmailSignup />
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Home gets its own render so it can show the loading screen */}
+        <Route
+          path="/"
+          element={
+            <div className="app-container">
+              <Header />
+              <main><Home /></main>
+              <Footer />
+            </div>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <About />
+            </Layout>
+          }
+        />
+        <Route
+          path="/investors"
+          element={
+            <Layout>
+              <InvestorDeck />
+            </Layout>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
