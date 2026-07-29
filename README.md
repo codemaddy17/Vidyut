@@ -8,7 +8,7 @@
 
 ---
 
-## ⚡ The Core Problem
+## The Core Problem
 
 India's electrical grid faces two massive structural challenges that share a common root cause — monitoring nodes in isolation:
 
@@ -17,7 +17,7 @@ India's electrical grid faces two massive structural challenges that share a com
 
 ---
 
-## 🔮 The Two AI Products
+## The Two AI Products
 
 Vidyut delivers two distinct AI products over a single integrated pipeline (**Sense → Predict → Deliver**):
 
@@ -33,7 +33,7 @@ Vidyut delivers two distinct AI products over a single integrated pipeline (**Se
 
 ---
 
-## 🎨 Web Application Features
+## Web Application Features
 
 - **Interactive Brand Experience**: Full-screen splash loading screen with logo fade-in & scale-up transitions.
 - **Dynamic Background Grid**: Custom canvas rendering an interactive electrical grid simulation with dynamic power routing.
@@ -45,7 +45,7 @@ Vidyut delivers two distinct AI products over a single integrated pipeline (**Se
 
 ---
 
-## 👥 Founders
+## Founders
 
 * **Aashna Suman** — *Co-founder (AI / ML & Research)*
   * Published anomaly-detection researcher (`IMMUNE` framework).
@@ -56,45 +56,7 @@ Vidyut delivers two distinct AI products over a single integrated pipeline (**Se
 
 ---
 
-## 🛠️ Project Structure
-
-```
-VIDYUT/
-├── docs/                          # PDF concept document & pitch deck
-│   ├── Vidyut_AI_Concept_Document.pdf
-│   └── Vidyut_Pitch_Deck.pdf
-├── public/                        # Static assets
-│   ├── assets/
-│   │   └── vidyut-logo.png        # Official Vidyut branding logo
-│   └── Vidyut_Pitch_Deck.pdf      # Downloadable investor pitch deck
-├── src/
-│   ├── components/                # Modular React UI components
-│   │   ├── BackgroundGrid.jsx     # Interactive background canvas
-│   │   ├── Header.jsx             # Responsive brand header & nav links
-│   │   ├── LoadingScreen.jsx      # Animated logo splash overlay
-│   │   └── ...
-│   ├── hooks/                     # Custom React hooks (useScrollReveal)
-│   ├── pages/                     # Route pages (Home, About, InvestorDeck)
-│   │   ├── Home.jsx
-│   │   ├── About.jsx
-│   │   └── InvestorDeck.jsx
-│   ├── App.jsx                    # Main router layout setup
-│   ├── index.css                  # Unified design system & custom CSS
-│   └── main.jsx
-├── index.html
-├── package.json
-└── vite.config.js
-```
-
----
-
-## 🚀 Tech Stack & Local Development
-
-* **Framework**: React 18 + Vite
-* **Routing**: React Router DOM (v6)
-* **Styling**: Modern Vanilla CSS with CSS Custom Properties & responsive design
-
-### Setup Instructions
+## Local Development
 
 1. **Clone the repository:**
    ```bash
@@ -111,7 +73,6 @@ VIDYUT/
    ```bash
    npm run dev
    ```
-   Open `http://localhost:3000` (or specified port) in your browser.
 
 4. **Build for production:**
    ```bash
