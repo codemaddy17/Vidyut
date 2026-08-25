@@ -12,7 +12,7 @@ export default function ManifestoQuote() {
         at every node, every feeder, every dispatch cycle. That is the system we are building.
       </p>
       <p className="manifesto-attribution">
-        Aashna Suman & Madhav Tiwari, Co-founders
+        Aarush Agrawal, Aashna Suman & Madhav Tiwari, Co-founders
       </p>
     </section>
   );

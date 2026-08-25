@@ -47,6 +47,9 @@ Vidyut delivers two distinct AI products over a single integrated pipeline (**Se
 
 ## Founders
 
+* **Aarush Agrawal** — *Co-founder (Full Stack Developer)*
+  * Builds responsive web applications across frontend and backend.
+  * Turns product concepts into functional, scalable software.
 * **Aashna Suman** — *Co-founder (AI / ML & Research)*
   * Published anomaly-detection researcher (`IMMUNE` framework).
   * 4 published research papers spanning graph-based systems & energy decision models.

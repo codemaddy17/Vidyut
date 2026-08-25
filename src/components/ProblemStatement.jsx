@@ -14,31 +14,28 @@ export default function ProblemStatement() {
             India is adding renewable capacity faster than the grid can absorb it
           </h2>
           <p className="problem-column-body">
-            The country will install over 225 GW of solar and wind by 2030. But transmission
-            infrastructure and state dispatch systems were designed for predictable, coal-heavy
-            generation. Renewable output fluctuates by the hour, and most grid operators today
-            lack the tooling to forecast where surplus will occur or which transmission corridors
-            will become saturated.
+            India added roughly 50 GW of renewable capacity in 2025 alone and is targeting 500 GW of non-fossil
+            capacity by 2030. But transmission infrastructure and dispatch systems are inflexible.
+            Renewable output fluctuates by the hour, and grid operators lack the predictive tooling to forecast
+            where surplus will occur or which corridors will saturate.
           </p>
           <div className="stat-highlight">
-            <span className="stat-number">$5.4B</span>
-            <span className="stat-context">estimated annual economic value<br />of curtailed renewable energy in India</span>
+            <span className="stat-number">2.1 TWh</span>
+            <span className="stat-context">of renewable electricity curtailed in FY 2025-26 — roughly ₹629 crore in foregone revenue</span>
           </div>
         </div>
         <div className={`problem-column ${rightReveal.className}`} ref={rightReveal.ref}>
           <h2 className="problem-column-title">
-            Transmission losses remain opaque and expensive
+            Transmission and commercial losses remain opaque and expensive
           </h2>
           <p className="problem-column-body">
-            Aggregate technical and commercial losses across Indian DISCOMs exceed 17%. Much of
-            this is concentrated in a small number of feeders, transformer clusters, and regional
-            interconnects. Identifying the precise points of loss requires combining SCADA telemetry,
-            weather forecasts, and physics-aware ML models at a resolution that existing SLDC
-            software cannot provide.
+            Aggregate technical and commercial (AT&C) losses across Indian distribution networks are estimated
+            around 22.5% — well above the 5–10% global benchmark. Pinpointing and localizing the physical origin of
+            theft or faults requires network-level graph reasoning rather than looking at nodes in isolation.
           </p>
           <div className="stat-highlight">
-            <span className="stat-number">17%+</span>
-            <span className="stat-context">aggregate T&D losses across<br />India's distribution network</span>
+            <span className="stat-number">22.5%</span>
+            <span className="stat-context">estimated distribution losses across India's network, costing tens of billions annually</span>
           </div>
         </div>
       </div>

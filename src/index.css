@@ -1177,6 +1177,22 @@ body {
   letter-spacing: 0.02em;
 }
 
+.team-photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border-subtle);
+  filter: grayscale(10%) contrast(105%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+  transform: scale(1.05);
+  filter: grayscale(0%) contrast(100%);
+}
+
 .team-info {
   display: flex;
   flex-direction: column;
@@ -1807,6 +1823,22 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.investor-team-photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border-subtle);
+  filter: grayscale(10%) contrast(105%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.investor-team-block:hover .investor-team-photo {
+  transform: scale(1.05);
+  filter: grayscale(0%) contrast(100%);
 }
 
 .investor-product-block {

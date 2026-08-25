@@ -302,14 +302,40 @@ export default function InvestorDeck() {
         </InvestorSection>
 
         {/* ── Team ── */}
-        <InvestorSection number="07" title="Team — Built by Students, Not Around One">
+        <InvestorSection number="07" title="Team — Built by students, not around one">
           <p className="investor-para" style={{ marginBottom: '1rem' }}>
-            Two B.Tech founders, close enough to the technical layer to build the core models and product
+            Three B.Tech founders, close enough to the technical layer to build the core models and product
             ourselves — and young enough to commit fully to one problem.
           </p>
           <div className="investor-two-col">
             <div className="investor-team-block">
-              <span className="investor-team-initials">AS</span>
+              <div
+                className="investor-team-photo"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontFamily: 'var(--font-mono)',
+                  fontWeight: 600,
+                  color: 'var(--primary-blue)',
+                  background: 'var(--bg-surface)',
+                  border: '1px solid var(--border-subtle)',
+                  fontSize: '1.2rem',
+                }}
+              >
+                AA
+              </div>
+              <div>
+                <h3 className="investor-sub-title">Aarush Agrawal — Full Stack Developer</h3>
+                <ul className="investor-list">
+                  <li>Builds responsive web applications across both frontend and backend</li>
+                  <li>Experienced in turning ideas into functional, scalable software solutions.</li>
+                  <li>Capable of taking a product from initial concept and UI implementation to backend integration and deployment.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="investor-team-block">
+              <img src="/assets/aashna.png" alt="Aashna Suman" className="investor-team-photo" />
               <div>
                 <h3 className="investor-sub-title">Aashna Suman — AI / ML & Research</h3>
                 <ul className="investor-list">
@@ -320,7 +346,7 @@ export default function InvestorDeck() {
               </div>
             </div>
             <div className="investor-team-block">
-              <span className="investor-team-initials">MT</span>
+              <img src="/assets/madhav.png" alt="Madhav Tiwari" className="investor-team-photo" />
               <div>
                 <h3 className="investor-sub-title">Madhav Tiwari — Product Engineering & Design</h3>
                 <ul className="investor-list">

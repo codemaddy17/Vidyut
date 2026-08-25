@@ -10,7 +10,7 @@ export default function Footer() {
           className="footer-logo-img"
         />
         <p className="founders-names">
-          Founders: <strong>Aashna Suman</strong> & <strong>Madhav Tiwari</strong>
+          Founders: <strong>Aarush Agrawal</strong>, <strong>Aashna Suman</strong> & <strong>Madhav Tiwari</strong>
         </p>
       </div>
       <div className="footer-right">

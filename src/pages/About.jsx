@@ -6,11 +6,15 @@ function SectionLabel({ children }) {
   return <p className="section-label">{children}</p>;
 }
 
-function TeamCard({ initials, name, role, tags, bullets }) {
+function TeamCard({ initials, name, role, tags, bullets, image }) {
   const reveal = useScrollReveal();
   return (
     <div className={`team-card ${reveal.className}`} ref={reveal.ref}>
-      <div className="team-avatar">{initials}</div>
+      {image ? (
+        <img src={image} alt={name} className="team-photo" />
+      ) : (
+        <div className="team-avatar">{initials}</div>
+      )}
       <div className="team-info">
         <h3 className="team-name">{name}</h3>
         <p className="team-role">{role}</p>
@@ -62,9 +66,20 @@ function ProductCard({ number, title, tagline, stages }) {
 
 const team = [
   {
+    initials: 'AA',
+    name: 'Aarush Agrawal',
+    role: 'Co-founder — Full Stack Developer',
+    bullets: [
+      'Builds responsive web applications across both frontend and backend',
+      'Experienced in turning ideas into functional, scalable software solutions.',
+      'Capable of taking a product from initial concept and UI implementation to backend integration and deployment.',
+    ],
+  },
+  {
     initials: 'AS',
     name: 'Aashna Suman',
     role: 'Co-founder — AI / ML & Research',
+    image: '/assets/aashna.png',
     bullets: [
       'Published anomaly-detection framework (IMMUNE) — the same core technique behind Product 2\'s detection layer',
       'Prior research spanning graph-based systems and RL-based decision models in the energy domain',
@@ -75,6 +90,7 @@ const team = [
     initials: 'MT',
     name: 'Madhav Tiwari',
     role: 'Co-founder — Product Engineering & Design',
+    image: '/assets/madhav.png',
     bullets: [
       'iOS and web development — builds the live dashboard and field-technician app in-house from day one',
       'Photography and visual design background — brings genuine product polish, rare in grid-tech tooling',
@@ -222,8 +238,8 @@ export default function About() {
         <section className="about-team-section">
           <SectionLabel>The Founders</SectionLabel>
           <p className="about-lead" style={{ marginBottom: '1.5rem' }}>
-            Two B.Tech founders, close enough to the technical layer to build the core models
-            and product ourselves — and committed fully to one problem.
+            Three B.Tech founders, close enough to the technical layer to build the core models
+            and product ourselves — and young enough to commit fully to one problem.
           </p>
           <div className="team-grid">
             {team.map((t) => (
